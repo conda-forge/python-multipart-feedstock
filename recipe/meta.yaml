@@ -1,18 +1,18 @@
 {% set name = "python-multipart" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7bb5f611fc600d15fa47b3974c8aa16e93724513b49b5f95c81e6624c83fa43
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e9925a80bb668529f1b67c7fdb0a5dacdd7cbfc6fb0bff3ea443fe22bdd62132
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'A streaming multipart parser for Python.'
+  summary: A streaming multipart parser for Python.
   description: |
     python-multipart is an Apache2 licensed streaming multipart parser for Python.
     It's still under some development, but test coverage is currently 100%.
