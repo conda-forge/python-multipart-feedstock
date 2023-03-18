@@ -1,30 +1,34 @@
 {% set name = "python-multipart" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7bb5f611fc600d15fa47b3974c8aa16e93724513b49b5f95c81e6624c83fa43
+  url: https://pypi.io/packages/source/{{ name[0] }}/python_multipart/python_multipart-{{ version }}.tar.gz
+  sha256: e9925a80bb668529f1b67c7fdb0a5dacdd7cbfc6fb0bff3ea443fe22bdd62132
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . -vvv"
 
 requirements:
   host:
-    - python
+    - hatchling
+    - python >=3.7
     - pip
   run:
-    - python
-    - six >=1.4.0
+    - python >=3.7
 
 test:
   imports:
     - multipart
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/andrew-d/python-multipart
@@ -42,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - carlodri
+    - thewchan
