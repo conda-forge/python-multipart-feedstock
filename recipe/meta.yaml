@@ -31,7 +31,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/andrew-d/python-multipart
+  home: https://github.com/Kludex/python-multipart
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
@@ -40,8 +40,8 @@ about:
     python-multipart is an Apache2 licensed streaming multipart parser for Python.
     It's still under some development, but test coverage is currently 100%.
     Documentation is available [here](http://andrew-d.github.io/python-multipart/).
-  doc_url: http://andrew-d.github.io/python-multipart/
-  dev_url: https://github.com/andrew-d/python-multipart
+  doc_url: https://multipart.fastapiexpert.com
+  dev_url: https://github.com/Kludex/python-multipart
 
 extra:
   recipe-maintainers:
