@@ -3,15 +3,15 @@ About python-multipart-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-multipart-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/andrew-d/python-multipart
+Home: https://github.com/Kludex/python-multipart
 
 Package license: Apache-2.0
 
 Summary: A streaming multipart parser for Python.
 
-Development: https://github.com/andrew-d/python-multipart
+Development: https://github.com/Kludex/python-multipart
 
-Documentation: http://andrew-d.github.io/python-multipart/
+Documentation: https://multipart.fastapiexpert.com
 
 python-multipart is an Apache2 licensed streaming multipart parser for Python.
 It's still under some development, but test coverage is currently 100%.
