@@ -24,7 +24,7 @@ requirements:
 
 test:
   imports:
-    - multipart
+    - python_multipart
   commands:
     - pip check
   requires:
