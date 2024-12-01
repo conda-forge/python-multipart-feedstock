@@ -1,5 +1,5 @@
 {% set name = "python-multipart" %}
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/python_multipart/python_multipart-{{ version }}.tar.gz
-  sha256: 7a68db60c8bfb82e460637fa4750727b45af1d5e2ed215593f917f64694d34fe
+  sha256: 905502ef39050557b7a6af411f454bc19526529ca46ae6831508438890ce12cc
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vvv"
 
 requirements:
