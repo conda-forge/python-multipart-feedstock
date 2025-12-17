@@ -1,5 +1,5 @@
 {% set name = "python-multipart" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/python_multipart/python_multipart-{{ version }}.tar.gz
-  sha256: 8dd0cab45b8e23064ae09147625994d090fa46f5b0d1e13af944c331a7fa9d13
+  sha256: 7137ebd4d3bbf70ea1622998f902b97a29434a9e8dc40eb203bbcf7c2a2cba92
 
 build:
   noarch: python
