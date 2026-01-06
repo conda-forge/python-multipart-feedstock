@@ -11,12 +11,11 @@ Summary: A streaming multipart parser for Python.
 
 Development: https://github.com/Kludex/python-multipart
 
-Documentation: https://multipart.fastapiexpert.com
+Documentation: https://multipart.fastapiexpert.com/
 
 python-multipart is an Apache2 licensed streaming multipart parser for Python.
 It's still under some development, but test coverage is currently 100%.
 Documentation is available [here](http://andrew-d.github.io/python-multipart/).
-
 
 Current build status
 ====================

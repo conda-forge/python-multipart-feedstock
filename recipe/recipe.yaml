@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  name: python-multipart
+  version: 0.0.21
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/python_multipart/python_multipart-${{ version }}.tar.gz
+  sha256: 7137ebd4d3bbf70ea1622998f902b97a29434a9e8dc40eb203bbcf7c2a2cba92
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vvv
+
+requirements:
+  host:
+    - hatchling
+    - python ${{ python_min }}.*
+    - pip
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - python_multipart
+      python_version: ${{ python_min }}.*
+
+about:
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  summary: A streaming multipart parser for Python.
+  description: |
+    python-multipart is an Apache2 licensed streaming multipart parser for Python.
+    It's still under some development, but test coverage is currently 100%.
+    Documentation is available [here](http://andrew-d.github.io/python-multipart/).
+  homepage: https://github.com/Kludex/python-multipart
+  repository: https://github.com/Kludex/python-multipart
+  documentation: https://multipart.fastapiexpert.com
+
+extra:
+  recipe-maintainers:
+    - carlodri
+    - thewchan
+    - davidbrochart
