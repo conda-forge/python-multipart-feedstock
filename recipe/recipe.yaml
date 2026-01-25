@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: python-multipart
-  version: 0.0.21
+  version: "0.0.22"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/python_multipart/python_multipart-${{ version }}.tar.gz
-  sha256: 7137ebd4d3bbf70ea1622998f902b97a29434a9e8dc40eb203bbcf7c2a2cba92
+  sha256: 7340bef99a7e0032613f56dc36027b959fd3b30a787ed62d310e951f7c3a3a58
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vvv
 
