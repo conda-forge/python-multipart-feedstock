@@ -29,7 +29,10 @@ tests:
   - python:
       imports:
         - python_multipart
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+      pip_check: true
 
 about:
   license: Apache-2.0
