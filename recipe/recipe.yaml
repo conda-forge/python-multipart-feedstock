@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: python-multipart
-  version: "0.0.26"
+  version: "0.0.27"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/python_multipart/python_multipart-${{ version }}.tar.gz
-  sha256: 08fadc45918cd615e26846437f50c5d6d23304da32c341f289a617127b081f17
+  sha256: 9870a6a8c5a20a5bf4f07c017bd1489006ff8836cff097b6933355ee2b49b602
 
 build:
   number: 0
